@@ -14,12 +14,15 @@ header#document-header
                 a
                     padding: 0
 
-    @include media-breakpoint-down(desktop)
-        .primary-menu
+        @include media-breakpoint-up(desktop)
+            > .container
+                align-items: flex-start
+
+        @include media-breakpoint-down(desktop)
             .ecosystem-menu
                 display: none
                 order: 3
 
-        html.has-menu-opened &
-            .ecosystem-menu
-                display: block
+            html.has-menu-opened &
+                .ecosystem-menu
+                    display: block
