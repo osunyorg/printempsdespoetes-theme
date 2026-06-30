@@ -1,0 +1,11 @@
+---
+title: Menu principal
+items:
+  - title: Le printemps
+    target: "https://www.printempsdespoetes.osuny.site/"
+  - title: L'agenda
+    target: "https://www.printempsdespoetes.osuny.site/agenda/"
+  - title: Le centre pour la poésie
+    target: "https://centre-pour-la-poesie.printempsdespoetes.osuny.site/"
+  - title: La poéthèque
+    target: "https://la-poetheque.printempsdespoetes.osuny.site/"

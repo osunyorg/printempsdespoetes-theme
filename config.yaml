@@ -1,0 +1,8 @@
+theme: osuny
+params:
+  logo:
+    header: "/assets/images/votrelogo.svg"
+    footer: "/assets/images/votrelogo.svg"
+  seo:
+    title:
+      separator: « • »
