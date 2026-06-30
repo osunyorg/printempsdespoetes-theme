@@ -1,0 +1,25 @@
+header#document-header
+    .primary-menu
+        .ecosystem-menu
+            @include meta
+            order: -1
+            text-transform: uppercase
+            a
+                text-decoration: none
+        .menu
+            .nav-level-1
+                flex-direction: column
+                align-items: flex-end
+                text-align: right
+                a
+                    padding: 0
+
+    @include media-breakpoint-down(desktop)
+        .primary-menu
+            .ecosystem-menu
+                display: none
+                order: 3
+
+        html.has-menu-opened &
+            .ecosystem-menu
+                display: block
