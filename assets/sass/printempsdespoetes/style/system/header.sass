@@ -14,6 +14,17 @@ header#document-header
                 a
                     padding: 0
 
+                a.active
+                    display: flex
+                    align-items: center
+                    gap: space()
+                    &::before
+                        background-color: var(--color-text)
+                        border-radius: 100%
+                        content: ''
+                        height: pxToRem(11)
+                        width: pxToRem(11)
+
         @include media-breakpoint-up(desktop)
             > .container
                 align-items: flex-start
