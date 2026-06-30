@@ -47,7 +47,20 @@ header#document-header
             .ecosystem-menu
                 display: none
                 order: 3
+                padding-bottom: var(--grid-gutter)
 
             html.has-menu-opened &
                 .ecosystem-menu
                     display: block
+
+            .menu
+                .nav-search button
+                    padding-bottom: 0
+                    padding-top: 0
+                    display: flex
+                    justify-content: flex-end
+                    &::after
+                        margin-right: 0
+                        margin-bottom: 0
+                        padding-right: 0
+                        padding-top: space(6)
