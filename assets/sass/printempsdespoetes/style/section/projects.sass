@@ -30,9 +30,6 @@
                 .taxonomy-children
                     @include accent-pills
 
-        + .container
-            margin-top: var(--grid-gutter)
-
     @include media-breakpoint-up(desktop)
         .hero
             padding-bottom: var(--grid-gutter)
@@ -48,6 +45,7 @@
                     padding-bottom: 0
 
         .breadcrumb-container
+            margin-bottom: $spacing-6
             .breadcrumb-nav
                 padding-left: offset(4)
             .breadcrumb
