@@ -11,3 +11,16 @@
             padding: space() space(3)
             text-transform: uppercase
             font-weight: bold
+
+@mixin ecosystem-active-item
+    font-weight: bold
+    position: relative
+    a
+        color: var(--color-accent)
+    &::before
+        content: ''
+        height: 12px
+        width: 5px
+        background-color: var(--color-accent)
+        position: absolute
+        margin-left: var(--grid-gutter-negative)

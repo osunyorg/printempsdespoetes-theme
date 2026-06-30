@@ -4,8 +4,14 @@ header#document-header
             @include meta
             order: -1
             text-transform: uppercase
+            li
+                display: flex
+                align-items: center
             a
                 text-decoration: none
+                line-height: 100%
+            li + li
+                margin-top: space()
         .menu
             .nav-level-1
                 flex-direction: column
