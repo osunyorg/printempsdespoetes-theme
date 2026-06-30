@@ -17,7 +17,9 @@ header#document-header
         @include media-breakpoint-up(desktop)
             > .container
                 align-items: flex-start
-
+                .menu,
+                .ecosystem-menu
+                    width: columns(4)
         @include media-breakpoint-down(desktop)
             .ecosystem-menu
                 display: none
