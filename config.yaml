@@ -12,14 +12,6 @@ params:
   home:
     head:
       title: site
-  projects:
-    single:
-      meta:
-        position: hero
-        options:
-          year: false
-          share: false
-          with_labels: false
     share_links:
       enabled: false
   components:
@@ -29,3 +21,20 @@ params:
         disabled: true
       in_gallery:
         disabled: false
+
+  persons:
+    single:
+      meta:
+        position: hero
+        options:
+          taxonomies: false
+          with_labels: false
+
+  projects:
+    single:
+      meta:
+        position: hero
+        options:
+          year: false
+          share: false
+          with_labels: false
