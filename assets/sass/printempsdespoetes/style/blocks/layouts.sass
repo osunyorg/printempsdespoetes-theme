@@ -1,0 +1,35 @@
+@mixin list-without-border
+    @include in-page-with-or-without-sidebar
+        > li
+            padding-bottom: 0
+            padding-top: 0
+            border: none
+            + li
+                margin-top: var(--grid-gutter)
+            .media
+                width: columns(4)
+                order: -1
+            article
+                .post-content,
+                .project-description
+                    align-items: start
+                    display: grid
+                    grid-template-columns: repeat(8, 1fr)
+                    grid-template-rows: auto auto 1fr
+                    column-gap: var(--grid-gutter)
+                    flex: 1
+                    [class*="-title"],
+                    hgroup
+                        grid-column: 1/5
+                        grid-row: 1
+                    > div
+                        grid-column: 5/9
+                        grid-row: 1 / span 3
+                        margin-top: 0
+                    [class*="meta"]
+                        grid-column: 1/5
+                        grid-row: 2
+                        margin-top: $spacing-3
+                    .project-summary
+                        .rich-text
+                            width: columns(4)
