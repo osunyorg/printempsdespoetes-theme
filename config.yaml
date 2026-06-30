@@ -21,6 +21,7 @@ params:
         disabled: true
       in_gallery:
         disabled: false
+
   persons:
     single:
       meta:
@@ -28,6 +29,14 @@ params:
         options:
           taxonomies: false
           with_labels: false
+
+  posts:
+    single:
+      meta:
+        position: hero
+        options:
+          with_labels: false
+
   projects:
     single:
       meta:
