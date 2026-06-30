@@ -7,3 +7,40 @@
                     .project-title,
                     .project-subtitle
                         @include h3
+
+    &--large
+        .project
+            @include in-page-without-sidebar
+                align-items: center
+
+.projects__page
+    .hero
+        padding-bottom: 0
+        .single-meta.hero-meta
+            margin-top: 0
+            .taxonomies
+                .taxonomy-children
+                    @include accent-pills
+
+        + .container
+            margin-top: var(--grid-gutter)
+
+    @include media-breakpoint-up(desktop)
+        .hero
+            padding-bottom: var(--grid-gutter)
+            .content
+                align-items: flex-start
+            figure
+                width: columns(8)
+            .hero-text
+                gap: var(--grid-gutter)
+                width: columns(4)
+                .single-meta.hero-meta
+                    margin-top: $spacing-3
+                    padding-bottom: 0
+
+        .breadcrumb-container
+            .breadcrumb-nav
+                padding-left: offset(4)
+            .breadcrumb
+                height: unset

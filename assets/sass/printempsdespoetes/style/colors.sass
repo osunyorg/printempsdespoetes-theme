@@ -1,2 +1,13 @@
-[class$="-subtitle"]
+[class$="-subtitle"],
+.hero h1 span
     color: var(--color-accent) !important
+
+@mixin accent-pills
+    > li
+        a
+            background-color: var(--color-accent)
+            border-radius: 14px
+            color: var(--color-background)
+            padding: space() space(3)
+            text-transform: uppercase
+            font-weight: bold
