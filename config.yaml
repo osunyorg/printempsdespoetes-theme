@@ -45,3 +45,16 @@ params:
           year: false
           share: false
           with_labels: false
+
+  image_sizes:
+    sections:
+      posts:
+        layouts:
+          list:
+            desktop:  624
+      projects:
+        hero_single:
+          desktop:  1260
+        layouts:
+          list:
+            desktop:  624
