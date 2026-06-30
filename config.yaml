@@ -1,8 +1,31 @@
 theme: osuny
 params:
+  breadcrumb:
+    position: after-hero
+  summary:
+    position: hero
+  search:
+    active: true
   logo:
-    header: "/assets/images/votrelogo.svg"
-    footer: "/assets/images/votrelogo.svg"
-  seo:
-    title:
-      separator: « • »
+    header: '/assets/images/logo.svg'
+    footer: '/assets/images/logo-white.svg'
+  home:
+    head:
+      title: site
+  projects:
+    single:
+      meta:
+        position: hero
+        options:
+          year: false
+          share: false
+          with_labels: false
+    share_links:
+      enabled: false
+  components:
+    lightbox:
+      disabled: false
+      in_hero:
+        disabled: true
+      in_gallery:
+        disabled: false
