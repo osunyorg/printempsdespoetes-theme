@@ -22,6 +22,10 @@ params:
       in_gallery:
         disabled: false
 
+  organizations:
+    single:
+      backlinks: true
+
   persons:
     single:
       meta:
@@ -29,6 +33,7 @@ params:
         options:
           taxonomies: false
           with_labels: false
+      backlinks: true
 
   posts:
     single:
