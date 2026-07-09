@@ -43,10 +43,14 @@
                 align-items: flex-start
             figure
                 margin-right: var(--grid-gutter-negative)
-                width: columns(8)
+                width: columns(7)
             .hero-text
                 gap: var(--grid-gutter)
                 width: columns(4)
                 .single-meta.hero-meta
                     margin-top: $spacing-3
                     padding-bottom: 0
+
+    @include media-breakpoint-up(xxl)
+        figure
+            width: columns(8)
